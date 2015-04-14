@@ -70,9 +70,9 @@
       };
     }
 
-    , componentWillMount: function () {
+    , componentWillReceiveProps: function (nextProps) {
       this.setState({
-        tags: this.props.tags.slice(0)
+        tags: nextProps.tags.slice(0)
       });
     }
 
